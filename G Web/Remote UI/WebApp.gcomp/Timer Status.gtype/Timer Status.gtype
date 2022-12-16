@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="2667821C313BE99C90908CA5DAF98F916D89CEF7ACEAC6860F741536BC6B8DD2BA5806D2D45B2FF72A215197E400F43F32922E4D7A8CAD528965C35D526B200A" Timestamp="1D8FFB12D20AE4C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.5.0.49854" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.5.0.49854" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.5.0.49854" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.5.0.49854" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="9.5.0.49854" Name="G Web Development Software" Version="22.3.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@5e17d4c9e604409fa18b9d977091ab93" Id="c77490ec6fe34019ba0b4938efa527be" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="8a7c3d36a5c9402193e9fcd2a17cf45f" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3fff2b784a4a48fd859471bc8046dcf8" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="be5146f18f674f188484d12bed79b725" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@5e17d4c9e604409fa18b9d977091ab93" Id="77c3a61fd5824888af470739fb836af1" Name="Timer Status">
+			<p.DefaultValue>0x0_False_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="11aa937a0ca64aa3a8e632189678dc41" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="f60807baedc64bc5b1a4863d7d38a52b" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="2e87ddd3fff24358a971426de73bec95" Name="Timer Status.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="b6550c94bc35405883f5d53c537ff73b" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="c4cd845744494a29b4026b75fb7a0f32" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5e17d4c9e604409fa18b9d977091ab93" Height="[float]112" Id="996ca6265644f429a66be0a9edb43a0" Label="[UIModel]f36385f000f44bc7b03b1611de9c232f" Left="[float]54" TabIndex="[int]0" Top="[float]70" Value="{DataItemBinding Id=77c3a61fd5824888af470739fb836af1}" Width="[float]88" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="4401ac11aa9542a88cd364d1ec1da931" Label="[UIModel]46459c17d7f24233b44d5c64bf987c1e" Left="[float]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Elapsed}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="46459c17d7f24233b44d5c64bf987c1e" LabelOwner="[UIModel]4401ac11aa9542a88cd364d1ec1da931" Left="[float]4" Text="[string]Elapsed" Top="[float]4" Width="[float]41" />
+						<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="af4be1749e52433280ed8fb7a39fc541" IsReadOnly="[bool]False" Label="[UIModel]7f1226d2d5e94fdeb69250885e210840" Left="[float]4" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]76" TrueContent="[string]On" Value="{ClusterBinding FieldName=Running}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="7f1226d2d5e94fdeb69250885e210840" LabelOwner="[UIModel]af4be1749e52433280ed8fb7a39fc541" Left="[float]4" Text="[string]Running" Top="[float]56" Width="[float]45" />
+					</Cluster>
+					<Label Height="[float]16" Id="f36385f000f44bc7b03b1611de9c232f" LabelOwner="[UIModel]996ca6265644f429a66be0a9edb43a0" Left="[float]54" Text="[string]Timer Status" Top="[float]50" Width="[float]66" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="5e17d4c9e604409fa18b9d977091ab93">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Elapsed" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Running" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
